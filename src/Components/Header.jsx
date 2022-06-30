@@ -1,13 +1,13 @@
-
+import icone from '../img/icone.png'
 
 export default function Header(){
     return (
-        <header className="w-full flex h-11 justify-around items-center">
-            <img src="" alt="" />
-            <nav className="flex gap-8 text-Cor-Texto">
-                <a href="#">Inicio</a>
-                <a href="#">Habilidades</a>
-                <a href="#">Projetos</a>
+        <header className="w-full flex h-16 justify-around items-center py-8 absolute bg-Fundo-dark/80 z-20">
+            <img className='w-16  h-16' src={icone} alt="Icone site" />
+            <nav className="flex gap-4 text-Cor-Texto text-1xl">
+                <a className="hover:text-Cor-Secundaria transition-colors" href="#">Inicio</a>
+                <a className="hover:text-Cor-Secundaria transition-colors" href="#">Habilidades</a>
+                <a className="hover:text-Cor-Secundaria transition-colors" href="#">Projetos</a>
             </nav>
         </header>
     )
