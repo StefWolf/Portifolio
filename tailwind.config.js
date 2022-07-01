@@ -8,7 +8,8 @@ module.exports = {
       colors: {
         'Fundo-dark': '#303030',
         'Cor-Secundaria': '#4A148C',
-        'Cor-Texto': '#ffffff'
+        'Cor-Texto': '#ffffff',
+        'Fundo-Secundario': '#424242'
       }
     },
   },

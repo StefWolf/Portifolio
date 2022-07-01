@@ -3,6 +3,7 @@ import Header from "../Components/Header"
 import Bitmap from "../img/Bitmap.png"
 
 import { GithubLogo, LinkedinLogo, InstagramLogo } from 'phosphor-react'
+import Card from "../Components/Card"
 
 export default function Home() {
     return(
@@ -23,6 +24,13 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className="pt-10 pl-3 w-full flex gap-7">
+                    <Card title="Testando titulo" descricao="Aqui é uma descrição para um card" />
+                    <Card title="Testando titulo" descricao="Aqui é uma descrição para um card" />
+                    <Card title="Testando titulo" descricao="Aqui é uma descrição para um card" />
+                    <Card title="Testando titulo" descricao="Aqui é uma descrição para um card" />
+                  
                 </div>
             </main>
         </div>
