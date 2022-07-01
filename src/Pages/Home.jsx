@@ -1,6 +1,9 @@
 
 import Header from "../Components/Header"
 import Bitmap from "../img/Bitmap.png"
+import House from '../img/House.jpg'
+
+import Ocma from '../img/Projects/ocma.png'
 
 
 import { GithubLogo, LinkedinLogo, InstagramLogo, } from 'phosphor-react'
@@ -26,18 +29,18 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="pt-10 pl-3 w-full flex gap-7">
+                <div className="pt-10 pl-3 w-full flex gap-7 items-center">
                     <Card 
                         title="Meu Portifólio" 
-                        descricao="Desenvolvimento do meu primeiro portifólio feito em ReactJS, com o intuito de 
-                                    mostrar meus projetos e habilidades"
+                        descricao="Desenvolvimento do meu primeiro portifólio feito em ReactJS"
                         icons="React, HTML, CSS" 
+                        img_url={House}
                     />
                     <Card 
-                        title="Meu Portifólio" 
-                        descricao="Desenvolvimento do meu primeiro portifólio feito em ReactJS, com o intuito de 
-                                    mostrar meus projetos e habilidades"
-                        icons="React, HTML, CSS" 
+                        title="Projeto OCMA" 
+                        descricao="Desenvolvimento do projeto final da disciplina de Introdução a Técnicas de Programação"
+                        icons="C" 
+                        img_url= {Ocma}
                     />
                     <Card 
                         title="Meu Portifólio" 
@@ -48,7 +51,6 @@ export default function Home() {
                   
                 </div>
             </main>
-           
         </div>
     )
 }
