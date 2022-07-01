@@ -2,7 +2,8 @@
 import Header from "../Components/Header"
 import Bitmap from "../img/Bitmap.png"
 
-import { GithubLogo, LinkedinLogo, InstagramLogo } from 'phosphor-react'
+
+import { GithubLogo, LinkedinLogo, InstagramLogo, } from 'phosphor-react'
 import Card from "../Components/Card"
 
 export default function Home() {
@@ -26,13 +27,28 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="pt-10 pl-3 w-full flex gap-7">
-                    <Card title="Testando titulo" descricao="Aqui é uma descrição para um card" />
-                    <Card title="Testando titulo" descricao="Aqui é uma descrição para um card" />
-                    <Card title="Testando titulo" descricao="Aqui é uma descrição para um card" />
-                    <Card title="Testando titulo" descricao="Aqui é uma descrição para um card" />
+                    <Card 
+                        title="Meu Portifólio" 
+                        descricao="Desenvolvimento do meu primeiro portifólio feito em ReactJS, com o intuito de 
+                                    mostrar meus projetos e habilidades"
+                        icons="React, HTML, CSS" 
+                    />
+                    <Card 
+                        title="Meu Portifólio" 
+                        descricao="Desenvolvimento do meu primeiro portifólio feito em ReactJS, com o intuito de 
+                                    mostrar meus projetos e habilidades"
+                        icons="React, HTML, CSS" 
+                    />
+                    <Card 
+                        title="Meu Portifólio" 
+                        descricao="Desenvolvimento do meu primeiro portifólio feito em ReactJS, com o intuito de 
+                                    mostrar meus projetos e habilidades"
+                        icons="React, HTML, CSS" 
+                    />
                   
                 </div>
             </main>
+           
         </div>
     )
 }
