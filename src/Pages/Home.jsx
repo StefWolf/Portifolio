@@ -2,18 +2,40 @@
 import Header from "../Components/Header"
 import Bitmap from "../img/Bitmap.png"
 import House from '../img/House.jpg'
+import { useState } from "react"
+import { DiUnitySmall, DiBootstrap, DiCss3, DiHtml5, DiJsBadge, DiMysql, DiReact} from "react-icons/di";
 
 import Ocma from '../img/Projects/ocma.png'
 
 
-import { GithubLogo, LinkedinLogo, InstagramLogo, } from 'phosphor-react'
+import { GithubLogo, LinkedinLogo, InstagramLogo, Folder, Alarm, HeartStraight } from 'phosphor-react'
 import Card from "../Components/Card"
+import Footer from "../Components/Footer";
 
 export default function Home() {
+    const [site, setSite] = useState(true)
+    const [jogos, setJogos] = useState(false)
+    const [escritas, setEscritas] = useState(false)
+
+    function taglesSite(){
+        setSite(true)
+        setJogos(false)
+        setEscritas(false)
+    }
+    function tagleJogos(){
+        setSite(false)
+        setJogos(true)
+        setEscritas(false)
+    }
+    function tagleEscritas(){
+        setSite(false)
+        setJogos(false)
+        setEscritas(true)
+    }
     return(
         <div>
             <Header />
-            <main className="w-full">
+            <main className="w-full mb-8">
                 <div className="relative">
                     <img className="w-full" src={Bitmap}/>
                     <div className="absolute top-0 w-full h-full flex items-center justify-center">
@@ -29,28 +51,115 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="pt-10 pl-3 w-full flex gap-7 items-center">
-                    <Card 
-                        title="Meu Portifólio" 
-                        descricao="Desenvolvimento do meu primeiro portifólio feito em ReactJS"
-                        icons="React, HTML, CSS" 
-                        img_url={House}
-                    />
-                    <Card 
-                        title="Projeto OCMA" 
-                        descricao="Desenvolvimento do projeto final da disciplina de Introdução a Técnicas de Programação"
-                        icons="C" 
-                        img_url= {Ocma}
-                    />
-                    <Card 
-                        title="Meu Portifólio" 
-                        descricao="Desenvolvimento do meu primeiro portifólio feito em ReactJS, com o intuito de 
-                                    mostrar meus projetos e habilidades"
-                        icons="React, HTML, CSS" 
-                    />
-                  
+                <div className="w-full flex justify-around">
+                    <div className="flex gap-3 text-white mt-7 ml-20">
+                        <div className="flex flex-col items-center">
+                            <DiUnitySmall className="text-white" size={50} />
+                            <span>Unity</span>
+                        </div>
+                        <div className="flex flex-col items-center">
+                            <DiBootstrap className="text-purple-800" size={50}/>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div className="flex flex-col items-center">
+                            <DiCss3 className="text-blue-400" size={50} />
+                            <span>CSS</span>
+                        </div>
+                        <div className="flex flex-col items-center">
+                            <DiHtml5 className="text-orange-400" size={50} />
+                            <span>HTML</span>
+                        </div>
+                        <div className="flex flex-col items-center">
+                            <DiJsBadge className="text-yellow-400" size={50} />
+                            <span>Js</span>
+                        </div>
+                        <div className="flex flex-col items-center">
+                            <DiMysql className="text-blue-400" size={50} />
+                            <span>Mysql</span>
+                        </div>
+                        <div className="flex flex-col items-center">
+                            <DiReact className="text-blue-700" size={50} />
+                            <span>React</span>
+                        </div>
+                    </div>
+                    <img src="https://avatars.githubusercontent.com/u/61637759?v=4" alt="Stefane" className="w-[250px] h-[250px] -mt-36 z-20 rounded-lg shadow-purple-900" />
+                </div>
+                <div className="flex w-full justify-center">
+
+                    <div className=" w-full md:w-5/6 h-[200px] bg-[#424242] rounded-lg border-2 border-Cor-Secundaria flex text-Cor-Texto py-5 justify-around mt-16">
+                        <div className="flex flex-col">
+                            <div className="flex items-center">
+                                <Folder className="text-Cor-Secundaria" size={94} />
+                                <strong className="text-5xl">14</strong>
+                            </div>
+                            <span>Número de Projetos</span>
+                        </div>
+                        <div className="flex flex-col">
+                            <div className="flex items-center">
+                                <Alarm className="text-Cor-Secundaria" size={94} />
+                                <strong className="text-5xl">14</strong>
+                            </div>
+                            <span>Horas de estudo</span>
+                        </div>
+                        <div className="flex flex-col">
+                            <div className="flex items-center">
+                                <HeartStraight className="text-Cor-Secundaria" size={94} />
+                                <strong className="text-5xl">14</strong>
+                            </div>
+                            <span>Certificados</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="pt-10 pl-3 w-full flex flex-col gap-7 items-center">
+                    <nav className="w-full flex items-center justify-center gap-8 text-Cor-Texto font-2xl">
+                        <button onClick={taglesSite} className="hover:underline hover:text-[#949494]">Sites</button>
+                        <button onClick={tagleJogos} className="hover:underline hover:text-[#949494]">Jogos</button>
+                        <button onClick={tagleEscritas} className="hover:underline hover:text-[#949494]">Escritas</button>
+                    </nav>
+                    {site  ? 
+                        <div className="w-full flex gap-5 justify-center">
+                            <Card 
+                                title="Meu Portifólio" 
+                                descricao="Desenvolvimento do meu primeiro portifólio feito em ReactJS"
+                                icons="React, HTML, CSS" 
+                                img_url={House}
+                            />
+                            <Card 
+                                title="Meu Portifólio" 
+                                descricao="Desenvolvimento do meu primeiro portifólio feito em ReactJS"
+                                icons="React, HTML, CSS" 
+                                img_url={House}
+                            />
+                            <Card 
+                                title="Meu Portifólio" 
+                                descricao="Desenvolvimento do meu primeiro portifólio feito em ReactJS"
+                                icons="React, HTML, CSS" 
+                                img_url={House}
+                            />
+                        </div>
+                        
+                    : null}
+                    {jogos ? 
+                        <div className="w-full flex gap-5 justify-center">
+                            <Card 
+                                title="Projeto OCMA" 
+                                descricao="Desenvolvimento do projeto final da disciplina de Introdução a Técnicas de Programação"
+                                icons="C" 
+                                img_url= {Ocma}
+                            />
+                            <Card 
+                                title="Projeto OCMA" 
+                                descricao="Desenvolvimento do projeto final da disciplina de Introdução a Técnicas de Programação"
+                                icons="C" 
+                                img_url= {Ocma}
+                            />
+                        </div>
+                    : null}
+                    {escritas ? <p>Escritas</p> : null}
                 </div>
             </main>
+            <Footer />
         </div>
     )
 }
