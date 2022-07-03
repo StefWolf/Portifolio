@@ -5,12 +5,13 @@ import House from '../img/House.jpg'
 import { useState } from "react"
 import { DiUnitySmall, DiBootstrap, DiCss3, DiHtml5, DiJsBadge, DiMysql, DiReact} from "react-icons/di";
 
-import Ocma from '../img/Projects/ocma.png'
+import Ocma from '../img/Projects/ocma.png' 
 
 
 import { GithubLogo, LinkedinLogo, InstagramLogo, Folder, Alarm, HeartStraight } from 'phosphor-react'
 import Card from "../Components/Card"
 import Footer from "../Components/Footer";
+import ProgressHistory from "../Components/ProgressHistory";
 
 export default function Home() {
     const [site, setSite] = useState(true)
@@ -82,8 +83,13 @@ export default function Home() {
                             <span>React</span>
                         </div>
                     </div>
-                    <img src="https://avatars.githubusercontent.com/u/61637759?v=4" alt="Stefane" className="w-[250px] h-[250px] -mt-36 z-20 rounded-lg shadow-purple-900" />
+                    <img src="https://avatars.githubusercontent.com/u/61637759?v=4" alt="Stefane" className="w-[250px] h-[250px] -mt-36 z-20 rounded-lg drop-shadow-lg" />
                 </div>
+
+                <ProgressHistory />
+
+
+
                 <div className="flex w-full justify-center">
 
                     <div className=" w-full md:w-5/6 h-[200px] bg-[#424242] rounded-lg border-2 border-Cor-Secundaria flex text-Cor-Texto py-5 justify-around mt-16">
