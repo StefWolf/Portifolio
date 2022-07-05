@@ -14,6 +14,8 @@ import Footer from "../Components/Footer";
 import ProgressHistory from "../Components/ProgressHistory";
 import Informacoes from "../Components/Informacoes";
 import Site from "../Components/Filtros/Site";
+import Jogos from "../Components/Filtros/Jogos";
+import Escritas from "../Components/Filtros/Escritas";
 
 export default function Home() {
     const [site, setSite] = useState(true)
@@ -105,10 +107,10 @@ export default function Home() {
                     : null}
                     {jogos ? 
                         <div className="w-full lg:flex gap-5 justify-center">
-                            <p>jogos</p>
+                            <Jogos />
                         </div>
                     : null}
-                    {escritas ? <p>Escritas</p> : null}
+                    {escritas ? <Escritas /> : null}
                 </div>
             </main>
             <Footer />
