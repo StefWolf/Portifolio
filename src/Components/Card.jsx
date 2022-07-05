@@ -4,7 +4,7 @@ import ButtonDark from './Buttons/ButtonDark'
 export default function Card({img_url, url, descricao, title, icons}){
     return(
         <>
-            <div data-aos="flip-left" className="w-[20%] min-h-[100px] rounded-md bg-Fundo-Secundario flex flex-col opacity-75 shadow-md hover:opacity-100 transition">
+            <div data-aos="flip-left" className=" mb-3 lg:w-[20%] w-[80%] min-h-[100px] rounded-md bg-Fundo-Secundario flex flex-col opacity-75 shadow-md hover:opacity-100 transition ml-10">
                 <div>
                     <img className="rounded-t-md" src={img_url} />
                 </div>

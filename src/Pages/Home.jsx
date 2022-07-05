@@ -40,10 +40,10 @@ export default function Home() {
                 <div className="relative">
                     <img className="w-full" src={Bitmap}/>
                     <div className="absolute top-0 w-full h-full flex items-center justify-center">
-                        <div className="absolute w-[801px] h-[346px] bg-Cor-Secundaria/80 rounded-[34px] flex gap-4 flex-col p-[37px] text-Cor-Texto">
+                        <div className="lg:absolute w-[801px] h-[346px] bg-Cor-Secundaria/80  lg:rounded-[34px] flex gap-4 flex-col p-[37px]  text-Cor-Texto">
                             <span className=" text-[36px]">Hello World</span>
-                            <h1 className="font-bold text-[36px]">Meu nome é Stefane e sou Estudante de TI</h1>
-                            <p className="text-[22px]">Como um mar de rosas preencho as pétalas da vida em meu coração, até que as gotas do mar da luxúria se transforme em chamas de ternúria</p>
+                            <h1 className="font-bold lg:text-[36px] text-[25px]">Meu nome é Stefane e sou Estudante de TI</h1>
+                            <p className="lg:text-[22px]">Como um mar de rosas preencho as pétalas da vida em meu coração, até que as gotas do mar da luxúria se transforme em chamas de ternúria</p>
                             <div className="flex gap-2">
                                <a href="" target='_black' className="hover:text-[#949494] transition-colors"><GithubLogo size={32} /></a>
                                <a href="" target='_black' className="hover:text-[#949494] transition-colors"><LinkedinLogo size={32} /></a>
@@ -83,7 +83,7 @@ export default function Home() {
                             <span>React</span>
                         </div>
                     </div>
-                    <img src="https://avatars.githubusercontent.com/u/61637759?v=4" alt="Stefane" className="w-[250px] h-[250px] -mt-36 z-20 rounded-lg drop-shadow-lg" />
+                    <img src="https://avatars.githubusercontent.com/u/61637759?v=4" alt="Stefane" className="lg:w-[250px] lg:h-[250px] w-[150px] lg:ml-0 -ml-80 h-[150px] lg:-mt-36  lg:z-20 rounded-lg drop-shadow-lg" />
                 </div>
 
                 <ProgressHistory />
@@ -92,7 +92,7 @@ export default function Home() {
 
                 <div className="flex w-full justify-center">
 
-                    <div className=" w-full md:w-5/6 h-[200px] bg-[#424242] rounded-lg border-2 border-Cor-Secundaria flex text-Cor-Texto py-5 justify-around mt-16">
+                    <div className=" w-full md:w-5/6 h-[200px] bg-[#424242] lg:rounded-lg border-2 border-Cor-Secundaria flex text-Cor-Texto py-5 justify-around mt-16">
                         <div className="flex flex-col">
                             <div className="flex items-center">
                                 <Folder className="text-Cor-Secundaria" size={94} />
@@ -119,12 +119,12 @@ export default function Home() {
 
                 <div className="pt-10 pl-3 w-full flex flex-col gap-7 items-center">
                     <nav className="w-full flex items-center justify-center gap-8 text-Cor-Texto font-2xl">
-                        <button onClick={taglesSite} className="hover:underline hover:text-[#949494]">Sites</button>
+                        <button onClick={taglesSite} className="sm:text-sm hover:underline hover:text-[#949494]">Sites</button>
                         <button onClick={tagleJogos} className="hover:underline hover:text-[#949494]">Jogos</button>
                         <button onClick={tagleEscritas} className="hover:underline hover:text-[#949494]">Escritas</button>
                     </nav>
                     {site  ? 
-                        <div className="w-full flex gap-5 justify-center">
+                        <div className="w-full lg:flex gap-5 justify-center">
                             <Card 
                                 title="Meu Portifólio" 
                                 descricao="Desenvolvimento do meu primeiro portifólio feito em ReactJS"
@@ -147,7 +147,7 @@ export default function Home() {
                         
                     : null}
                     {jogos ? 
-                        <div className="w-full flex gap-5 justify-center">
+                        <div className="w-full lg:flex gap-5 justify-center">
                             <Card 
                                 title="Projeto OCMA" 
                                 descricao="Desenvolvimento do projeto final da disciplina de Introdução a Técnicas de Programação"
