@@ -40,14 +40,17 @@ export default function Home() {
     return(
         <div>
             <Header />
-            <main className="w-full mb-8">
-                <div className="relative">
+            <main className="w-full mb-8 ">
+                <div className="relative lg:mt-0 mt-16">
                     <img className="w-full" src={Bitmap}/>
                     <div className="absolute top-0 w-full h-full flex items-center justify-center">
                         <div className="lg:absolute w-[801px] h-[346px] bg-Cor-Secundaria/80  lg:rounded-[34px] flex gap-4 flex-col p-[37px]  text-Cor-Texto">
-                            <span className=" text-[36px]">Hello World</span>
+                            <div>
+                                <span className=" text-[36px]">Hello World</span>
+                                
+                            </div>
                             <h1 className="font-bold lg:text-[36px] text-[25px]">Meu nome é Stefane e sou Estudante de TI</h1>
-                            <p className="lg:text-[22px]">Como um mar de rosas preencho as pétalas da vida em meu coração, até que as gotas do mar da luxúria se transforme em chamas de ternúria</p>
+                            <p className="lg:text-[22px] ">Como um mar de rosas preencho as pétalas da vida em meu coração, até que as gotas do mar da luxúria se transforme em chamas de ternúria</p>
                             <div className="flex gap-2">
                                <a href="" target='_black' className="hover:text-[#949494] transition-colors"><GithubLogo size={32} /></a>
                                <a href="" target='_black' className="hover:text-[#949494] transition-colors"><LinkedinLogo size={32} /></a>
@@ -56,38 +59,39 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="w-full flex justify-around">
-                    <div className="flex gap-3 text-white mt-7 ml-20">
+
+                <div className="w-full lg:flex  justify-around pt-[20%] lg:pt-0">
+                    <div className="flex gap-3 text-[10px] lg:text-sm text-white mt-7 lg:ml-20">
                         <div className="flex flex-col items-center">
-                            <DiUnitySmall className="text-white" size={50} />
+                            <DiUnitySmall className="text-white" size={40} />
                             <span>Unity</span>
                         </div>
                         <div className="flex flex-col items-center">
-                            <DiBootstrap className="text-purple-800" size={50}/>
+                            <DiBootstrap className="text-purple-800" size={40}/>
                             <span>Bootstrap</span>
                         </div>
                         <div className="flex flex-col items-center">
-                            <DiCss3 className="text-blue-400" size={50} />
+                            <DiCss3 className="text-blue-400" size={40} />
                             <span>CSS</span>
                         </div>
                         <div className="flex flex-col items-center">
-                            <DiHtml5 className="text-orange-400" size={50} />
+                            <DiHtml5 className="text-orange-400" size={40} />
                             <span>HTML</span>
                         </div>
                         <div className="flex flex-col items-center">
-                            <DiJsBadge className="text-yellow-400" size={50} />
+                            <DiJsBadge className="text-yellow-400" size={40} />
                             <span>Js</span>
                         </div>
                         <div className="flex flex-col items-center">
-                            <DiMysql className="text-blue-400" size={50} />
+                            <DiMysql className="text-blue-400" size={40} />
                             <span>Mysql</span>
                         </div>
                         <div className="flex flex-col items-center">
-                            <DiReact className="text-blue-700" size={50} />
+                            <DiReact className="text-blue-700" size={40} />
                             <span>React</span>
                         </div>
                     </div>
-                    <img src="https://avatars.githubusercontent.com/u/61637759?v=4" alt="Stefane" className="lg:w-[250px] lg:h-[250px] w-[150px] lg:ml-0 -ml-80 h-[150px] lg:-mt-36  lg:z-20 rounded-lg drop-shadow-lg" />
+                    <img src="https://avatars.githubusercontent.com/u/61637759?v=4" alt="Stefane" className=" lg:w-[250px] lg:h-[250px] w-[300px] lg:ml-0  -mt-0 -ml-[80%] h-[300px] lg:-mt-36   lg:z-20 rounded-lg drop-shadow-lg" />
                 </div>
 
                 <ProgressHistory /> 

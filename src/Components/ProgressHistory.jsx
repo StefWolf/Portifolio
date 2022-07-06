@@ -4,10 +4,10 @@ export default function ProgressHistory(){
 
     return(
         <>
-            <div data-aos="fade-down" className=" w-full flex justify-center gap-32 mt-14">
+            <div data-aos="fade-down" className=" w-full p-[5%] lg:flex justify-center gap-32 mt-14">
                 <div>
                     <ButtonProgress title="Ensino" />
-                    <div className="border-l-2 border-b-2 border-Cor-Secundaria min-h-[200px] ml-7 max-w-[190px] text-white">
+                    <div className="border-l-2 lg:border-b-2 border-Cor-Secundaria min-h-[200px] ml-7 lg:max-w-[190px] text-white">
                         <div>
                             <ul>
                                 <li className=" border-Cor-Secundaria pt-4 flex">
