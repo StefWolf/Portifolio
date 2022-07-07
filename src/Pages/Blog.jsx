@@ -35,9 +35,10 @@ export default function Blog(){
         <>
             <Header />
             <main className="min-h-screen w-full flex  justify-center">
-                <section className="flex-1 flex flex-col relative items-center mt-24 text-Cor-Texto gap-4">
-                    <h1 className="underline text-3xl">{data.projeto.tTulo }</h1>
-                    <p className="absolute left-1">{dataFatura}</p>
+
+                <section className="flex-1 flex flex-col relative items-center mt-24 text-Cor-Texto gap-4 p-16 m-6  shadow-md border-2 border-black/10 ">
+                    <h1 className="text-5xl">{data.projeto.tTulo }</h1>
+                    <p className="absolute left-1 text-sm bg-Cor-Secundaria p-2 rounded-sm">{dataFatura}</p>
                     <div className="blog" dangerouslySetInnerHTML={{__html: data.projeto.blog}}>
                         
                     </div>
