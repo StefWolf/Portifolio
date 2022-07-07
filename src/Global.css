@@ -5,3 +5,13 @@
 body{
     @apply bg-Fundo-dark;
 }
+.blog{
+    @apply flex flex-col items-center gap-4;
+}
+.blog h1{
+    @apply text-2xl;
+}
+
+.blog img{
+    @apply max-w-[600px];
+}

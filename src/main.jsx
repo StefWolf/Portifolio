@@ -6,6 +6,7 @@ import { client } from './lib/Apolo'
 import './Global.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './Pages/Home'
+import Blog from './Pages/Blog'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -13,6 +14,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/blog/:blogURL" element={<Blog />} />
         </Routes>
       </BrowserRouter>
     </ApolloProvider>
