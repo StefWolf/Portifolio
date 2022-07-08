@@ -34,16 +34,16 @@ export default function Blog(){
     return(
         <>
             <Header />
-            <main className="min-h-screen w-full flex  justify-center">
+            <main className="min-h-screen  w-full lg:flex lg:flex-row flex-col  justify-center">
 
-                <section className="flex-1 flex flex-col relative items-center mt-24 text-Cor-Texto gap-4 p-16 m-6  shadow-md border-2 border-black/10 ">
+                <section className="flex-1 flex flex-col relative lg:items-center lg:mt-24 text-Cor-Texto gap-4 lg:p-16 p-4 lg:m-6  shadow-md border-2 border-black/10 ">
                     <h1 className="text-5xl">{data.projeto.tTulo }</h1>
-                    <p className="absolute left-1 text-sm bg-Cor-Secundaria p-2 rounded-sm">{dataFatura}</p>
+                    <p className="absolute lg:left-1 right-2 lg:right-auto text-sm bg-Cor-Secundaria p-2 rounded-sm">{dataFatura}</p>
                     <div className="blog" dangerouslySetInnerHTML={{__html: data.projeto.blog}}>
                         
                     </div>
                 </section>
-                <sidebar className="w-3/12">
+                <sidebar className="w-3/12 ">
                     <Sidebar />
                 </sidebar>
             </main>

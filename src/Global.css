@@ -13,5 +13,5 @@ body{
 }
 
 .blog img{
-    @apply max-w-[600px];
+    @apply lg:max-w-[600px];
 }

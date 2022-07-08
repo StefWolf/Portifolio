@@ -23,8 +23,8 @@ export default function Sidebar() {
     }
     return (
         <>
-            < div className="pt-5 bg-Cor-Blue/30 mt-24 shadow-sm " >
-                <h2 className="text-Cor-Texto w-full text-center text-1xl py-4 font-bold">Projetos mais Recentes</h2>
+            <div className="pt-5 bg-Cor-Blue/30 lg:mt-24 w-[85%] lg:w-full mt-6 shadow-sm ml-5 lg:ml-0 mb-5" >
+                <h2 className="text-Cor-Texto w-full  text-center text-1xl py-4 font-bold">Projetos mais Recentes</h2>
                 {data.allProjetos.map(Projeto => {
                     return (
                             <Link
