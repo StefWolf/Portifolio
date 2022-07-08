@@ -5,13 +5,34 @@
 body{
     @apply bg-Fundo-dark;
 }
+
+p{
+    @apply text-justify;
+}
+
+/*------ EDIÇÃO CSS DOS POSTS DO BLOG -----*/
 .blog{
     @apply flex flex-col items-center gap-4;
 }
 .blog h1{
     @apply text-2xl;
 }
+.blog h3{
+    @apply text-3xl;
+}
+.blog h2{
+    @apply text-2xl;
+}
 
 .blog img{
     @apply lg:max-w-[600px];
+}
+.blog ul li{
+    @apply hover:text-Cor-Blue
+}
+.blog ol li{
+    @apply hover:text-Cor-Blue
+}
+.blog a link{
+    @apply hover:text-Cor-Blue;
 }
