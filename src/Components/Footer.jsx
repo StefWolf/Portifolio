@@ -12,14 +12,14 @@ export default function Footer(){
                 </div>
             </div>
             <div className="flex gap-2 text-Cor-Texto">
-                <a href="" target='_black' className="hover:text-[#949494] transition-colors"><GithubLogo size={48} /></a>
-                <a href="" target='_black' className="hover:text-[#949494] transition-colors"><LinkedinLogo size={48} /></a>
-                <a href="" target='_black' className="hover:text-[#949494] transition-colors"><InstagramLogo size={48} /></a>
+                <a href="https://github.com/StefWolf" target='_black' className="hover:text-[#949494] transition-colors"><GithubLogo size={48} /></a>
+                <a href="https://www.linkedin.com/in/stefane-orichuela-0036871b4/" target='_black' className="hover:text-[#949494] transition-colors"><LinkedinLogo size={48} /></a>
+                <a href="https://www.instagram.com/_stefwolf_/" target='_black' className="hover:text-[#949494] transition-colors"><InstagramLogo size={48} /></a>
             </div>
             <nav className="flex flex-col items-center gap-4 text-Cor-Texto text-1xl">
-                <a className="hover:text-Cor-Secundaria transition-colors" href="#">Inicio</a>
-                <a className="hover:text-Cor-Secundaria transition-colors" href="#">Habilidades</a>
-                <a className="hover:text-Cor-Secundaria transition-colors" href="#">Projetos</a>
+                <a className="hover:text-Cor-Secundaria transition-colors" href="/">Inicio</a>
+                <a className="hover:text-Cor-Secundaria transition-colors" href="/">Habilidades</a>
+                <a className="hover:text-Cor-Secundaria transition-colors" href="/">Projetos</a>
             </nav>
         </footer>
     )

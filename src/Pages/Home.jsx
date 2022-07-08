@@ -52,9 +52,9 @@ export default function Home() {
                             <h1 className="font-bold lg:text-[36px] text-[25px]">Meu nome é Stefane e sou Estudante de TI</h1>
                             <p className="lg:text-[22px] ">Como um mar de rosas preencho as pétalas da vida em meu coração, até que as gotas do mar da luxúria se transforme em chamas de ternúria</p>
                             <div className="flex gap-2">
-                               <a href="" target='_black' className="hover:text-[#949494] transition-colors"><GithubLogo size={32} /></a>
-                               <a href="" target='_black' className="hover:text-[#949494] transition-colors"><LinkedinLogo size={32} /></a>
-                               <a href="" target='_black' className="hover:text-[#949494] transition-colors"><InstagramLogo size={32} /></a>
+                               <a href="https://github.com/StefWolf" target='_black' className="hover:text-[#949494] transition-colors"><GithubLogo size={32} /></a>
+                               <a href="https://www.linkedin.com/in/stefane-orichuela-0036871b4/" target='_black' className="hover:text-[#949494] transition-colors"><LinkedinLogo size={32} /></a>
+                               <a href="https://www.instagram.com/_stefwolf_/" target='_black' className="hover:text-[#949494] transition-colors"><InstagramLogo size={32} /></a>
                             </div>
                         </div>
                     </div>
