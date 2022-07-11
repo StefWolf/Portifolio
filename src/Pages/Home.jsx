@@ -2,6 +2,7 @@
 import Header from "../Components/Header"
 import Bitmap from "../img/Bitmap.png"
 import House from '../img/House.jpg'
+import Wallpaper from '../img/WorldWallpaper.jpg'
 import { useState } from "react"
 import { DiUnitySmall, DiBootstrap, DiCss3, DiHtml5, DiJsBadge, DiMysql, DiReact} from "react-icons/di";
 
@@ -42,8 +43,8 @@ export default function Home() {
             <Header />
             <main className="w-full mb-8 ">
                 <div className="relative h-screen md:h-auto">
-                    <img className="w-full h-screen md:h-auto" src={Bitmap}/>
-                    <div className="absolute top-0 w-full h-full flex items-center justify-center">
+                    <img className="w-full h-screen md:h-auto" src={Wallpaper}/>
+                    <div className="absolute top-0  w-full h-full flex items-center justify-center">
                         <div className="lg:absolute w-[801px] h-[346px] bg-Cor-Secundaria/80  lg:rounded-[34px] flex gap-4 flex-col p-[37px]  text-Cor-Texto">
                             <div>
                                 <span className=" text-[36px]">Hello World</span>
@@ -91,7 +92,7 @@ export default function Home() {
                             <span>React</span>
                         </div>
                     </div>
-                    <img src="https://avatars.githubusercontent.com/u/61637759?v=4" alt="Stefane" className=" lg:w-[250px] lg:h-[250px] w-[300px] lg:ml-0  -ml-[80%] h-[300px] lg:-mt-36   lg:z-20 rounded-lg drop-shadow-lg" />
+                    <img src="https://avatars.githubusercontent.com/u/61637759?v=4" alt="Stefane" className=" lg:w-[250px] lg:h-[250px] w-[300px] lg:ml-0   h-[300px] lg:-mt-36   lg:z-20 rounded-lg drop-shadow-lg" />
                 </div>
 
                 <ProgressHistory /> 

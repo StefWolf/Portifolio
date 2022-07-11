@@ -30,7 +30,7 @@ export default function Header(){
                         <a onClick={setMenuMobile} className="hover:text-Cor-Secundaria transition-colors" href="/">Projetos</a>
                     </nav>
                 </header>
-            </div> : <List size={64} onClick={setMenuMobile} className="fixed top-2 right-2 z-40 text-slate-200" />}
+            </div> : <List size={64} onClick={setMenuMobile} className="fixed top-2 right-2 z-40 text-slate-200 lg:invisible" />}
     
         </>
         
