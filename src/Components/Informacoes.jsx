@@ -26,21 +26,21 @@ export default function Informacoes(){
         <div className="flex w-full justify-center">
                     <div className=" w-full md:w-5/6 h-[200px] bg-[#424242] lg:rounded-lg border-2 border-Cor-Secundaria flex text-Cor-Texto py-5 justify-around mt-16">
                         <div className="flex flex-col">
-                            <div className="flex items-center">
+                            <div className="flex items-center flex-col lg:flex-row">
                                 <Folder className="text-Cor-Secundaria" size={94} />
                                 <strong className="text-5xl">{data.informaOGeral.nMeroDeProjetos}</strong>
                             </div>
-                            <span>Número de Projetos</span>
+                            <span>N° de Projetos</span>
                         </div>
                         <div className="flex flex-col">
-                            <div className="flex items-center">
+                            <div className="flex items-center flex-col lg:flex-row">
                                 <Alarm className="text-Cor-Secundaria" size={94} />
                                 <strong className="text-5xl">1{data.informaOGeral.horasDeEstudos}</strong>
                             </div>
                             <span>Horas de estudo</span>
                         </div>
                         <div className="flex flex-col">
-                            <div className="flex items-center">
+                            <div className="flex items-center flex-col lg:flex-row">
                                 <HeartStraight className="text-Cor-Secundaria" size={94} />
                                 <strong className="text-5xl">{data.informaOGeral.certificados}</strong>
                             </div>
