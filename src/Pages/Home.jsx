@@ -41,8 +41,8 @@ export default function Home() {
         <div>
             <Header />
             <main className="w-full mb-8 ">
-                <div className="relative lg:mt-0 mt-16">
-                    <img className="w-full" src={Bitmap}/>
+                <div className="relative h-screen md:h-auto">
+                    <img className="w-full h-screen md:h-auto" src={Bitmap}/>
                     <div className="absolute top-0 w-full h-full flex items-center justify-center">
                         <div className="lg:absolute w-[801px] h-[346px] bg-Cor-Secundaria/80  lg:rounded-[34px] flex gap-4 flex-col p-[37px]  text-Cor-Texto">
                             <div>
@@ -60,8 +60,8 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="w-full lg:flex  justify-around pt-[20%] lg:pt-0">
-                    <div className="flex gap-3 text-[10px] lg:text-sm text-white mt-7 lg:ml-20">
+                <div className="w-full flex  justify-around pt-[20%] flex-wrap-reverse lg:pt-0">
+                    <div className="flex gap-3 text-[10px] lg:w-auto w-full justify-center lg:text-sm text-white mt-7 lg:ml-20">
                         <div className="flex flex-col items-center">
                             <DiUnitySmall className="text-white" size={40} />
                             <span>Unity</span>
@@ -91,14 +91,14 @@ export default function Home() {
                             <span>React</span>
                         </div>
                     </div>
-                    <img src="https://avatars.githubusercontent.com/u/61637759?v=4" alt="Stefane" className=" lg:w-[250px] lg:h-[250px] w-[300px] lg:ml-0  -mt-0 -ml-[80%] h-[300px] lg:-mt-36   lg:z-20 rounded-lg drop-shadow-lg" />
+                    <img src="https://avatars.githubusercontent.com/u/61637759?v=4" alt="Stefane" className=" lg:w-[250px] lg:h-[250px] w-[300px] lg:ml-0  -ml-[80%] h-[300px] lg:-mt-36   lg:z-20 rounded-lg drop-shadow-lg" />
                 </div>
 
                 <ProgressHistory /> 
                 <Informacoes />
 
                 <div className="pt-10 pl-3 w-full flex flex-col gap-7 items-center">
-                    <nav className="w-full flex items-center justify-center gap-8 text-Cor-Texto font-2xl">
+                    <nav className="w-full lg:w-auto flex items-center justify-center gap-8 text-Cor-Texto font-2xl">
                         <button onClick={taglesSite} className="sm:text-sm hover:underline hover:text-[#949494]">Sites</button>
                         <button onClick={tagleJogos} className="hover:underline hover:text-[#949494]">Jogos</button>
                         <button onClick={tagleEscritas} className="hover:underline hover:text-[#949494]">Escritas</button>
