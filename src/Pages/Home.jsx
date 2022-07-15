@@ -45,13 +45,13 @@ export default function Home() {
                 <div className="relative h-screen md:h-auto">
                     <img className="w-full h-screen md:h-auto" src={Wallpaper}/>
                     <div className="absolute top-0  w-full h-full flex items-center justify-center">
-                        <div className="lg:absolute w-[801px] h-[346px] bg-Cor-Secundaria/80  lg:rounded-[34px] flex gap-4 flex-col p-[37px]  text-Cor-Texto">
+                        <div className="lg:absolute w-[801px] h-[390px] bg-Cor-Secundaria/80  lg:rounded-[34px] flex gap-4 flex-col p-[37px]  text-Cor-Texto">
                             <div>
                                 <span className=" text-[36px]">Hello World</span>
                                 
                             </div>
-                            <h1 className="font-bold lg:text-[36px] text-[25px]">Meu nome é Stefane e sou Estudante de TI</h1>
-                            <p className="lg:text-[22px] ">Como um mar de rosas preencho as pétalas da vida em meu coração, até que as gotas do mar da luxúria se transforme em chamas de ternúria</p>
+                            <h1 className="font-bold lg:text-[36px] text-[25px]">My name is Stefane</h1>
+                            <p className="lg:text-[22px] ">Estudante de TI, apaixonada pelos estudos que gosta de explorar o mundo de forma criativa. De minha vida eu faço arte, de minha profissão quero me tornar uma excelente programadora, e de meu projeto de vida, realizar meus sonhos.</p>
                             <div className="flex gap-2">
                                <a href="https://github.com/StefWolf" target='_black' className="hover:text-[#949494] transition-colors"><GithubLogo size={32} /></a>
                                <a href="https://www.linkedin.com/in/stefane-orichuela-0036871b4/" target='_black' className="hover:text-[#949494] transition-colors"><LinkedinLogo size={32} /></a>
