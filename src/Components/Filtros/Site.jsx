@@ -10,6 +10,7 @@ const QUERY_INFORMACOESGERAIS = gql`
         }
         tTulo
         tecnologias
+        urlextern
         slug
         imagemCard {
             url
@@ -42,6 +43,7 @@ export default function Site(){
                             descricao={Projeto.descriO}
                             title={Projeto.tTulo}
                             icons={Projeto.tecnologias}
+                            url_extern={Projeto.urlextern}
                         
                         />
                     )

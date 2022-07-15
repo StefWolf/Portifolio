@@ -11,6 +11,7 @@ export default function Escritas(){
             }
             tTulo
             tecnologias
+            urlextern
             slug
             imagemCard {
                 url
@@ -42,6 +43,7 @@ export default function Escritas(){
                             descricao={Projeto.descriO}
                             title={Projeto.tTulo}
                             icons={Projeto.tecnologias}
+                            url_extern={Projeto.urlextern}
                         
                         />
                     )
