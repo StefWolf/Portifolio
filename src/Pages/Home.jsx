@@ -3,6 +3,7 @@ import Header from "../Components/Header"
 import Bitmap from "../img/Bitmap.png"
 import House from '../img/House.jpg'
 import Wallpaper from '../img/WorldWallpaper.jpg'
+import ScreenWolf from '../img/WolfGirl.jpg'
 import { useState } from "react"
 import { DiUnitySmall, DiBootstrap, DiCss3, DiHtml5, DiJsBadge, DiMysql, DiReact} from "react-icons/di";
 
@@ -92,7 +93,7 @@ export default function Home() {
                             <span>React</span>
                         </div>
                     </div>
-                    <img src="https://avatars.githubusercontent.com/u/61637759?v=4" alt="Stefane" className=" lg:w-[250px] lg:h-[250px] w-[300px] lg:ml-0   h-[300px] lg:-mt-36   lg:z-20 rounded-lg drop-shadow-lg" />
+                    <img src={ScreenWolf} alt="Stefane" className=" lg:w-[250px] lg:h-[250px] w-[300px] lg:ml-0   h-[300px] lg:-mt-36   lg:z-20 rounded-lg drop-shadow-lg" />
                 </div>
 
                 <ProgressHistory /> 
