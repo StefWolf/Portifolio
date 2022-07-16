@@ -23,13 +23,13 @@ export default function Sidebar() {
     }
     return (
         <>
-            <div className="pt-5 bg-Cor-Blue/30 lg:mt-24 w-[85%] lg:w-full mt-6 shadow-sm ml-5 lg:ml-0 mb-5" >
+            <div className="pt-5 bg-Cor-Blue/20 lg:mt-24 w-[85%] lg:w-full mt-6 shadow-sm ml-5 lg:ml-0 mb-5 ">
                 <h2 className="text-Cor-Texto w-full  text-center text-1xl py-4 font-bold">Projetos mais Recentes</h2>
                 {data.allProjetos.map(Projeto => {
                     return (
                             <Link
                                 to={`/blog/${Projeto.slug}`}
-                                className="w-full flex flex-col gap-1 text-Cor-Texto  p-2 border-t-2 border-black/5 hover:bg-Cor-Secundaria hover:p-6 transition-all"
+                                className="w-full flex flex-col gap-1 text-Cor-Texto shadow-md  p-2 border-t-4 border-Fundo-dark hover:bg-Cor-Secundaria hover:p-6 transition-all"
                                 key={Projeto.id}>
                                 <div className="flex gap-4 ">
                                     <strong className="text-lg ">{Projeto.tTulo}</strong>
