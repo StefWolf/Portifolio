@@ -16,7 +16,7 @@ export default function Header(){
                 <nav className="lg:flex-row flex-col flex gap-4 text-Cor-Texto text-1xl">
                     <a  className="hover:text-Cor-Secundaria transition-colors" href="/">Inicio</a>
                     <a className="hover:text-Cor-Secundaria transition-colors" href="/">Habilidades</a>
-                    <a className="hover:text-Cor-Secundaria transition-colors" href="/">Projetos</a>
+                    <a className="hover:text-Cor-Secundaria transition-colors" href="/Projects/">Projetos</a>
                 </nav>
             </header>
 

@@ -7,8 +7,6 @@ import ScreenWolf from '../img/WolfGirl.jpg'
 import { useState } from "react"
 import { DiUnitySmall, DiBootstrap, DiCss3, DiHtml5, DiJsBadge, DiMysql, DiReact} from "react-icons/di";
 
-import Ocma from '../img/Projects/ocma.png' 
-
 
 import { GithubLogo, LinkedinLogo, InstagramLogo} from 'phosphor-react'
 import Card from "../Components/Card"
