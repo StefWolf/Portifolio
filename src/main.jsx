@@ -12,13 +12,13 @@ import Projects from  './Pages/Projects'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ApolloProvider client={client}>
-      <BrowserRouter>
+        <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/blog/:blogURL" element={<Blog />} />
-          <Route path="/Projects" element={<Projects />} />
-        </Routes>
-      </BrowserRouter>
+            <Route path="/" element={<Home />} />
+            <Route path="/blog/:blogURL" element={<Blog />} />
+            <Route path="/Projects" element={<Projects />} />
+          </Routes>
+        </BrowserRouter>
     </ApolloProvider>
   </React.StrictMode>
 

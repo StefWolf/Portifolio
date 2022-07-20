@@ -16,6 +16,7 @@ import Informacoes from "../Components/Informacoes";
 import Site from "../Components/Filtros/Site";
 import Jogos from "../Components/Filtros/Jogos";
 import Escritas from "../Components/Filtros/Escritas";
+import ButtonAll from "../Components/Buttons/ButtonAll"
 
 export default function Home() {
     const [site, setSite] = useState(true)
@@ -115,6 +116,8 @@ export default function Home() {
                         </div>
                     : null}
                     {escritas ? <Escritas /> : null}
+
+                    <ButtonAll />
                 </div>
             </main>
             <Footer />
