@@ -26,7 +26,7 @@ export default function Header(){
                     <nav className="pt-20 gap-4 text-white/80 text-[20px] w-full h-screen flex flex-col text-center">
                         <a onClick={setMenuMobile} className="hover:text-Cor-Secundaria transition-colors" href="/">Inicio</a>
                         <a onClick={setMenuMobile} className="hover:text-Cor-Secundaria transition-colors" href="/">Habilidades</a>
-                        <a onClick={setMenuMobile} className="hover:text-Cor-Secundaria transition-colors" href="/">Projetos</a>
+                        <a onClick={setMenuMobile} className="hover:text-Cor-Secundaria transition-colors" href="/Projects/">Projetos</a>
                     </nav>
                 </header>
             </div> : <List size={64} onClick={setMenuMobile} className="fixed top-2 right-8 z-40 text-slate-200 lg:invisible" />}
