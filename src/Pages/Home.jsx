@@ -50,7 +50,7 @@ export default function Home() {
                                 <span className=" text-[36px]">Hello World</span>
                                 
                             </div>
-                            <h1 className="font-bold lg:text-[36px] text-[25px]">My name is Stefane</h1>
+                            <h1 className="font-bold lg:text-[36px] text-[25px]">Meu nome é Stefane</h1>
                             <p className="lg:text-[22px] ">Estudante de TI, apaixonada pelos estudos que gosta de explorar o mundo de forma criativa. De minha vida eu faço arte, de minha profissão quero me tornar uma excelente programadora, e de meu projeto de vida, realizar meus sonhos.</p>
                             <div className="flex gap-2">
                                <a href="https://github.com/StefWolf" target='_black' className="hover:text-[#949494] transition-colors"><GithubLogo size={32} /></a>
