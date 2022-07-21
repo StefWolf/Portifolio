@@ -13,6 +13,7 @@ export default function Jogos(){
             tecnologias
             urlextern
             slug
+            statusProject
             imagemCard {
                 url
             }
@@ -44,6 +45,7 @@ export default function Jogos(){
                             title={Projeto.tTulo}
                             icons={Projeto.tecnologias}
                             url_extern={Projeto.urlextern}
+                            status={Projeto.statusProject}
                         
                         />
                     )
