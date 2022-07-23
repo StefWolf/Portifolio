@@ -105,13 +105,13 @@ export default function Home() {
                         <button onClick={tagleEscritas} className="hover:underline hover:text-[#949494]">Escritas</button>
                     </nav>
                     {site  ? 
-                        <div className="w-full lg:flex gap-5 justify-center">
+                        <div className="w-full lg:flex flex-wrap items-center gap-5 justify-center">
                             <Site />
                         </div>
                         
                     : null}
                     {jogos ? 
-                        <div className="w-full lg:flex gap-5 justify-center">
+                        <div className="w-full lg:flex items-center flex-wrap gap-5 justify-center">
                             <Jogos />
                         </div>
                     : null}

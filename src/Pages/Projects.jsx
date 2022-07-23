@@ -42,7 +42,7 @@ export default function Projects() {
                     meus bens mais valiosos ^^
                 </p>
             </div>
-            <section className='w-full lg:flex  lg:p-8 pl-3 justify-center  items-center'>
+            <section className='w-full flex  lg:p-8 pl-3 justify-center flex-wrap  items-center'>
                 {data.allProjetos.map(Projeto => {
                     return(
                         <Card 

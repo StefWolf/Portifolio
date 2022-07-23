@@ -15,7 +15,7 @@ export default function Header(){
                 <img className='w-16  h-16' src={Wolf_white} alt="Icone site" />
                 <nav className="lg:flex-row flex-col flex gap-4 text-Cor-Texto text-1xl">
                     <a  className="hover:text-Cor-Secundaria transition-colors" href="/">Inicio</a>
-                    <a className="hover:text-Cor-Secundaria transition-colors" href="/">Habilidades</a>
+                    <a className="hover:text-Cor-Secundaria transition-colors" href="/Caderno">Meu caderno</a>
                     <a className="hover:text-Cor-Secundaria transition-colors" href="/Projects/">Projetos</a>
                 </nav>
             </header>
@@ -25,7 +25,7 @@ export default function Header(){
                 <header data-aos="fade-right" className=" w-[50%] z-20 h-screen fixed border-r-2 border-black/40 top-0 bg-Fundo-dark ">
                     <nav className="pt-20 gap-4 text-white/80 text-[20px] w-full h-screen flex flex-col text-center">
                         <a onClick={setMenuMobile} className="hover:text-Cor-Secundaria transition-colors" href="/">Inicio</a>
-                        <a onClick={setMenuMobile} className="hover:text-Cor-Secundaria transition-colors" href="/">Habilidades</a>
+                        <a onClick={setMenuMobile} className="hover:text-Cor-Secundaria transition-colors" href="/Caderno">Meu Caderno</a>
                         <a onClick={setMenuMobile} className="hover:text-Cor-Secundaria transition-colors" href="/Projects/">Projetos</a>
                     </nav>
                 </header>

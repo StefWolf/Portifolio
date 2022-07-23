@@ -18,7 +18,7 @@ export default function Footer(){
             </div>
             <nav className="flex flex-col items-center gap-4 text-Cor-Texto text-1xl ">
                 <a className="hover:text-Cor-Secundaria transition-colors" href="/">Inicio</a>
-                <a className="hover:text-Cor-Secundaria transition-colors" href="/">Habilidades</a>
+                <a className="hover:text-Cor-Secundaria transition-colors" href="/Caderno">Meu Caderno</a>
                 <a className="hover:text-Cor-Secundaria transition-colors" href="/Projects/">Projetos</a>
             </nav>
         </footer>
