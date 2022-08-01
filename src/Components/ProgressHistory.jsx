@@ -58,10 +58,6 @@ export default function ProgressHistory(){
                                    
                                     <p className="ml-2"><strong>Lecionar</strong></p>
                                 </li>
-                                <li className=" border-Cor-Secundaria pt-4 flex">
-                                  
-                                    <p className="ml-2"><strong>Estrategista</strong></p>
-                                </li>
                             </ul>
                         </div>
                     </div>
