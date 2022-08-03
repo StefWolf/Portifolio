@@ -27,9 +27,6 @@ export default function Card({img_url, url, descricao, title, icons, url_extern,
                         
                     </div>
                 </div>
-                <div className="border-t border-Fundo-dark pl-4 text-sm">
-                    <p>{icons}</p>
-                </div>
             </div>
         </>
     )
