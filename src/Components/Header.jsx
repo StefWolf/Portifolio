@@ -28,9 +28,9 @@ export default function Header(){
                         <a onClick={setMenuMobile} className="hover:text-Cor-Secundaria transition-colors" href="/Projects/">Projetos</a>
                         <br />
                         <div className='flex gap-3 ml-6'>
-                            <InstagramLogo size={40} />
-                            <GithubLogo size={40} />
-                            <LinkedinLogo size={40} />
+                            <a href="https://www.linkedin.com/in/stefane-orichuela-0036871b4/"><LinkedinLogo size={40} /></a>
+                            <a href="https://www.instagram.com/_stefwolf_/"><InstagramLogo size={40} /></a>
+                            <a href="https://github.com/StefWolf"><GithubLogo size={40} /></a>
                         </div>
                     </nav>
                 </header>
@@ -40,3 +40,4 @@ export default function Header(){
         
     )
 }
+
