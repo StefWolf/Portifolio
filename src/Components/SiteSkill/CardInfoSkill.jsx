@@ -4,7 +4,7 @@ import { FiUser, FiEdit3, FiCoffee } from "react-icons/fi";
 
 export default function CardInfoSkill(){
     return(
-        <section className="bg-Fundo-dark shadow-lg text-Cor-Texto border-black/50 border-2 ml-[5%] mt-[2%]  w-[90%] h-[600px] lg:w-[20%] flex-col">
+        <section className="bg-Fundo-dark shadow-lg text-Cor-Texto border-black/50 border-2 ml-[5%] mt-[2%]  w-[90%] h-[600px] lg:w-[25%] flex-col">
             <div>
                 <div className='w-full justify-center pl-14 pt-7'>
                     <img src={screenWolf} />

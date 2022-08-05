@@ -12,7 +12,7 @@ export default function Header(){
     }
     return (
         <>
-            <header className="lg:w-full p-3 lg:flex lg:p-0 hidden lg:h-16 justify-around items-center py-8 absolute bg-Fundo-dark lg:bg-Fundo-dark/80 z-20">
+            <header className="lg:w-full p-3 lg:flex lg:p-0 hidden lg:h-16 justify-around items-center py-8 absolute bg-Fundo-dark border-b-2 border-black/20 shadow-md lg:bg-Fundo-dark/80 z-20">
                 <img className='w-16  h-16' src={Wolf_white} alt="Icone site" />
                 <nav className="lg:flex-row flex-col flex gap-4 text-Cor-Texto text-1xl">
                     <a  className="hover:text-Cor-Secundaria transition-colors" href="/">Inicio</a>
