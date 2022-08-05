@@ -17,6 +17,7 @@ export default function Header(){
                 <nav className="lg:flex-row flex-col flex gap-4 text-Cor-Texto text-1xl">
                     <a  className="hover:text-Cor-Secundaria transition-colors" href="/">Inicio</a>
                     <a className="hover:text-Cor-Secundaria transition-colors" href="/Projects/">Projetos</a>
+                    <a className="hover:text-Cor-Secundaria transition-colors" href='/Skills'>Skills</a>
                 </nav>
             </header>
 
@@ -26,6 +27,7 @@ export default function Header(){
                     <nav className="pt-20 gap-4 text-white/80 text-[20px] w-full h-screen flex flex-col text-center">
                         <a onClick={setMenuMobile} className="hover:text-Cor-Secundaria transition-colors" href="/">Inicio</a>
                         <a onClick={setMenuMobile} className="hover:text-Cor-Secundaria transition-colors" href="/Projects/">Projetos</a>
+                        <a onClick={setMenuMobile} className="hover:text-Cor-Secundaria transition-colors" href="/Skills">Skills</a>
                         <br />
                         <div className='flex gap-3 ml-6'>
                             <a href="https://www.linkedin.com/in/stefane-orichuela-0036871b4/"><LinkedinLogo size={40} /></a>

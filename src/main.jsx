@@ -2,13 +2,13 @@ import React from 'react'
 import { ApolloProvider } from "@apollo/client"
 import ReactDOM from 'react-dom/client'
 import { client } from './lib/Apolo'
-
 import './Global.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './Pages/Home'
 import Blog from './Pages/Blog'
 import Projects from  './Pages/Projects'
 import Caderno from './Pages/SiteCaderno/Caderno'
+import Skills from './Pages/Skills'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -19,6 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <Route path="/blog/:blogURL" element={<Blog />} />
             <Route path="/Projects" element={<Projects />} />
             <Route path="/Caderno" element={<Caderno />} />
+            <Route path="/Skills" element={<Skills />} />
           </Routes>
         </BrowserRouter>
     </ApolloProvider>
