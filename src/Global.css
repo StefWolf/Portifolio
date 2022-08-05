@@ -4,6 +4,7 @@
 
 body{
     @apply bg-Fundo-dark;
+    @apply dark:bg-black;
 }
 
 p{
