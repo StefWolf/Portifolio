@@ -8,6 +8,9 @@ export default function ThemeContextProvider({children}){
     useEffect(()=>{
         const root = window.document.documentElement;
 
+        const removeOldTheme = theme === "dark" ? "ligth" : "dark";
+
+        root.classList.remove(removeOldTheme);
         root.classList.add(theme);
         localStorage.setItem("theme", theme);
     },[theme])

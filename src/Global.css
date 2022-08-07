@@ -3,12 +3,17 @@
 @tailwind utilities;
 
 body{
-    @apply bg-Fundo-dark;
-    @apply dark:bg-black;
+    @apply bg-Cor-Texto;
+    @apply dark:bg-Fundo-dark;
+    @apply transition-all
 }
 
 p{
     @apply text-justify;
+}
+
+header{
+
 }
 
 /*------ EDIÇÃO CSS DOS POSTS DO BLOG -----*/

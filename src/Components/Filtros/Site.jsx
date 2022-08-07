@@ -26,7 +26,7 @@ export default function Site(){
     if(!data){
         return(
             <div className="flex w-full justify-center">
-                <div className=" w-full md:w-5/6 h-[200px] bg-[#424242] lg:rounded-lg border-2 border-Cor-Secundaria flex text-Cor-Texto py-5 justify-around mt-16">
+                <div className=" w-full md:w-5/6 h-[200px] dark:bg-[#424242] shadow-lg dark:shadow-none lg:rounded-lg border-2 border-Cor-Secundaria flex text-Cor-Texto py-5 justify-around mt-16">
                    <strong>Carregando...</strong> 
                 </div>   
             </div>
