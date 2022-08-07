@@ -33,7 +33,7 @@ export default function Sidebar() {
                                 key={Projeto.id}>
                                 <div className="flex gap-4 ">
                                     <strong className="text-lg ">{Projeto.tTulo}</strong>
-                                    <p className="text-[12px] bg-black/50 p-1 rounded-lg">{Projeto.sessEs.categoria}</p>
+                                    <p className="text-[12px] bg-black/50 text-Cor-Texto p-1 rounded-lg">{Projeto.sessEs.categoria}</p>
                                 </div>
                                 <p className="text-sm">{Projeto.descriO}</p>
                                 <p className="text-[10px] ">{Projeto.dataDoProjeto}</p>

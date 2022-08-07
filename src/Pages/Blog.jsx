@@ -39,7 +39,7 @@ export default function Blog(){
 
                 <section className="flex-1 flex flex-col relative lg:items-center lg:mt-24 dark:text-Cor-Texto text-Fundo-dark gap-4 lg:p-16 p-4 lg:m-6  shadow-md border-2 border-black/10 ">
                     <h1 className="text-5xl">{data.projeto.tTulo }</h1>
-                    <p className="lg:absolute lg:left-1  lg:right-auto text-sm bg-Cor-Secundaria p-2 rounded-sm">{dataFatura}</p>
+                    <p className="lg:absolute text-Cor-Texto lg:left-1  lg:right-auto text-sm bg-Cor-Secundaria p-2 rounded-sm">{dataFatura}</p>
                     <div className="blog" dangerouslySetInnerHTML={{__html: data.projeto.blog}}>
                         
                     </div>
