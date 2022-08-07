@@ -36,7 +36,7 @@ export default function Projects() {
         <Header />
         <main className='w-full '>
             <br />
-            <div className='lg:p-14 p-8 flex-col text-white w-full bg-Cor-Blue/20 mb-4'>
+            <div className='lg:p-14 p-8 flex-col dark:text-Cor-Texto text-Fundo-dark w-full dark:bg-Cor-Blue/20 bg-Cor-Blue mb-4'>
                 <h1 className='text-[40px]'>Projetos</h1>
                 <p className=' pl-5 '>Bem vindo(a) à página de todos os projetos! aqui você encontrará todos os 
                     meus bens mais valiosos ^^
