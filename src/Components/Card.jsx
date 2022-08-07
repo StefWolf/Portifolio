@@ -11,14 +11,14 @@ export default function Card({img_url, url, descricao, title, icons, url_extern,
     }
     return(
         <>
-            <div data-aos="flip-left" className=" mb-3 lg:w-[20%] w-[80%] min-h-[300px] lg:h-[300px] rounded-md dark:bg-Fundo-Secundario bg-Cor-Texto flex flex-col border-1 border-Cor-Secundaria opacity-75 shadow-md hover:opacity-100 transition ml-10">
+            <div data-aos="flip-left" className=" mb-3 lg:w-[20%] w-[80%] min-h-[300px] lg:h-[300px] rounded-md dark:bg-Fundo-Secundario bg-Cor-Texto flex flex-col border-2 border-Cor-Secundaria opacity-75 shadow-md hover:opacity-100 transition ml-10">
                 <div>
                     <img className="rounded-t-md" src={img_url} />
                 </div>
                 <div className="w-full  bg-[#303030]/60 justify-center items-center pl-2 pr-2 shadow-sm text-[11px]">
                    {statusProj()}
                 </div>
-                <div className="p-2 pl-4 gap-4 text-Cor-Texto ">
+                <div className="p-2 pl-4 gap-4 dark:text-Cor-Texto text-Fundo-dark ">
                     <h1 className=" font-bold text-lg">{title}</h1>
                     <p className="text-[14px]">{descricao}</p>
                     <div className='flex gap-3 mt-2'>
