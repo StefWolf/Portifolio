@@ -42,3 +42,8 @@ header{
 .blog a link{
     @apply hover:text-Cor-Blue;
 }
+
+.blog{
+    @apply dark:text-Cor-Texto;
+    @apply text-Fundo-dark;
+}
