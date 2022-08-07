@@ -33,7 +33,8 @@ export default function Blog(){
 
     return(
         <>
-            
+            <Header />
+            <br /> <br /> <br />
             <main className="min-h-screen  w-full lg:flex lg:flex-row flex-col  justify-center">
 
                 <section className="flex-1 flex flex-col relative lg:items-center lg:mt-24 text-Cor-Texto gap-4 lg:p-16 p-4 lg:m-6  shadow-md border-2 border-black/10 ">

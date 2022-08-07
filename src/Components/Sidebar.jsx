@@ -29,7 +29,7 @@ export default function Sidebar() {
                     return (
                             <Link
                                 to={`/blog/${Projeto.slug}`}
-                                className="w-full flex flex-col gap-1 text-Cor-Texto shadow-md  p-2 border-t-4 border-Fundo-dark hover:bg-Cor-Secundaria hover:p-6 transition-all"
+                                className="w-full flex flex-col gap-1 dark:text-Cor-Texto shadow-md text-Fundo-dark  p-2 border-t-4 dark:border-Fundo-dark border-Cor-Texto hover:bg-Cor-Secundaria hover:p-6 transition-all"
                                 key={Projeto.id}>
                                 <div className="flex gap-4 ">
                                     <strong className="text-lg ">{Projeto.tTulo}</strong>
