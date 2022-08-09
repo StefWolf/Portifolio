@@ -6,6 +6,7 @@ import Wolf_white from '../img/Wolf_white.png'
 import { GithubLogo, LinkedinLogo, InstagramLogo} from 'phosphor-react'
 import {FiMoon} from "react-icons/fi";
 import { useTheme } from '../Hooks/useTheme'
+import { BiSun } from "react-icons/bi";
 
 export default function Header(){
     const {theme, setTheme} = useTheme();
@@ -25,12 +26,14 @@ export default function Header(){
                         <a className="hover:text-Cor-Secundaria transition-colors" href='/Skills'>Skills</a>
                     </div>
                     {theme === "ligth" ? (
-                        <button className='bg-Fundo-dark/50 p-1 rounded-md  hover:bg-Fundo-dark/70 transition-all'>
-                            <FiMoon size={32} className="text-white" onClick={()=> setTheme("dark")}/>
+                        <button className=' text-[14px] w-[100px] flex gap-2 bg-Fundo-dark/10 p-2 rounded-md text-Fundo-dark hover:bg-Fundo-dark/30 transition-all' onClick={()=> setTheme("dark")}>
+                            <FiMoon size={20} className="text-Fundo-dark" />
+                            Escuro
                         </button>
                     ) : (
-                        <button className='bg-Cor-Texto/70  p-1 rounded-md  hover:bg-Cor-Texto/20 transition-all'>
-                            <FiMoon size={32} className="text-black" onClick={()=> setTheme("ligth")} />
+                        <button className=' flex gap-2 w-[100px] text-[14px] bg-Cor-Texto/10  p-2 rounded-md text-Cor-Texto  hover:bg-Cor-Texto/20 transition-all ' onClick={()=> setTheme("ligth")}>
+                            <BiSun size={20} className="text-Cor-Texto" />
+                            Claro
                         </button>
                     )}
                     
@@ -42,13 +45,15 @@ export default function Header(){
             { menuMobile ? <div className="bg-Fundo-dark/50 w-full h-full z-30 fixed top-0" onClick={menuBaile}>
                 <header data-aos="fade-right" className=" w-[50%] z-20 h-screen fixed border-r-2 border-black/40 top-0 bg-Cor-Secundaria ">
                         {theme === "ligth" ? (
-                            <button className='bg-Fundo-dark/50 w-[45px] m-2 p-1 rounded-md  hover:bg-Fundo-dark/70 transition-all'>
-                                <FiMoon size={32} className="text-white" onClick={()=> setTheme("dark")}/>
+                            <button className=' m-2 text-[14px] w-[100px] flex gap-2 bg-Fundo-dark/30 p-2 rounded-md text-Fundo-dark hover:bg-Fundo-dark/30 transition-all' onClick={()=> setTheme("dark")}>
+                                <FiMoon size={20} className="text-Fundo-dark" />
+                                Escuro
                             </button>
                         ) : (
-                            <button className='bg-Cor-Texto/70 w-[45px] m-2 p-1 rounded-md  hover:bg-Cor-Texto/20 transition-all'>
-                                <FiMoon size={32} className="text-black" onClick={()=> setTheme("ligth")} />
-                            </button>
+                            <button className=' m-2 flex gap-2 w-[100px] text-[14px] bg-Cor-Texto/10  p-2 rounded-md text-Cor-Texto  hover:bg-Cor-Texto/20 transition-all ' onClick={()=> setTheme("ligth")}>
+                                <BiSun size={20} className="text-Cor-Texto" />
+                            Claro
+                        </button>
                         )}
                     <nav className="pt-20 gap-4 text-white/80 text-[20px] w-full h-screen flex flex-col text-center">
                         <a onClick={setMenuMobile} className="hover:text-Cor-Secundaria transition-colors" href="/">Inicio</a>
