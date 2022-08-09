@@ -5,6 +5,7 @@ import Wolf_black from '../img/Wolf_black.png'
 import Wolf_white from '../img/Wolf_white.png'
 import { GithubLogo, LinkedinLogo, InstagramLogo} from 'phosphor-react'
 import {FiMoon} from "react-icons/fi";
+import { GiWolfHowl } from "react-icons/gi";
 import { useTheme } from '../Hooks/useTheme'
 import { BiSun } from "react-icons/bi";
 
@@ -17,28 +18,38 @@ export default function Header(){
     }
     return (
         <>
-            <header className="lg:w-full p-3 transition-all lg:flex lg:p-0 hidden lg:h-16 justify-around items-center py-8 absolute lg:bg-Cor-Texto lg:dark:bg-Fundo-dark border-b-2 border-black/20 shadow-md  z-20">
-                <img className='w-16  h-16' src={Wolf_white} alt="Icone site" />
-                <nav className="lg:flex-row flex-col flex gap-20 dark:text-Cor-Texto text-Fundo-dark text-1xl">
-                    <div className='flex gap-4 pt-2'>
-                        <a  className="hover:text-Cor-Secundaria transition-colors" href="/">Inicio</a>
-                        <a className="hover:text-Cor-Secundaria transition-colors" href="/Projects/">Projetos</a>
-                        <a className="hover:text-Cor-Secundaria transition-colors" href='/Skills'>Skills</a>
+            <header className="lg:w-full fixed p-3 z-30 transition-all lg:flex lg:p-0 hidden lg:h-16 justify-around items-center py-8  lg:bg-Cor-Texto lg:dark:bg-Fundo-dark border-b-2 border-black/20 shadow-md ">
+                <div className='flex gap-8'>
+                    <div className='flex gap-2'>
+                        <div className="text-[35px] mt-1 dark:text-Cor-Texto">
+                            <GiWolfHowl />
+                        </div>
+                        <h1 className="text-[32px] dark:text-Cor-Texto">
+                            <strong>StefWolf</strong>
+                        </h1>
                     </div>
+                    <nav className="lg:flex-row flex-col flex gap-20 dark:text-Cor-Texto text-Fundo-dark text-1xl">
+                        <div className='flex gap-4 pt-2'>
+                            <a  className="hover:text-Cor-Secundaria transition-colors" href="/">Inicio</a>
+                            <a className="hover:text-Cor-Secundaria transition-colors" href="/Projects/">Projetos</a>
+                            <a className="hover:text-Cor-Secundaria transition-colors" href='/Skills'>Skills</a>
+                        </div>
+                    </nav>
+                </div>
+                <div>
                     {theme === "ligth" ? (
                         <button className=' text-[14px] w-[100px] flex gap-2 bg-Fundo-dark/10 p-2 rounded-md text-Fundo-dark hover:bg-Fundo-dark/30 transition-all' onClick={()=> setTheme("dark")}>
                             <FiMoon size={20} className="text-Fundo-dark" />
-                            Escuro
+                                Escuro
                         </button>
-                    ) : (
+                        ) : (
                         <button className=' flex gap-2 w-[100px] text-[14px] bg-Cor-Texto/10  p-2 rounded-md text-Cor-Texto  hover:bg-Cor-Texto/20 transition-all ' onClick={()=> setTheme("ligth")}>
                             <BiSun size={20} className="text-Cor-Texto" />
-                            Claro
+                                Claro
                         </button>
                     )}
                     
-
-                </nav>
+                </div>
             </header>
 
             
