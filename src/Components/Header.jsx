@@ -45,7 +45,7 @@ export default function Header(){
             { menuMobile ? <div className="bg-Fundo-dark/50 w-full h-full z-30 fixed top-0" onClick={menuBaile}>
                 <header data-aos="fade-right" className=" w-[50%] z-20 h-screen fixed border-r-2 border-black/40 top-0 bg-Cor-Secundaria ">
                         {theme === "ligth" ? (
-                            <button className=' m-2 text-[14px] w-[100px] flex gap-2 bg-Fundo-dark/30 p-2 rounded-md text-Fundo-dark hover:bg-Fundo-dark/30 transition-all' onClick={()=> setTheme("dark")}>
+                            <button className=' m-2 text-[14px] w-[100px] flex gap-2 bg-Fundo-dark/30 p-2 rounded-md text-Cor-Texto hover:bg-Fundo-dark/30 transition-all' onClick={()=> setTheme("dark")}>
                                 <FiMoon size={20} className="text-Cor-Texto" />
                                 Escuro
                             </button>
