@@ -11,7 +11,7 @@ export default function Card({img_url, url, descricao, title, icons, url_extern,
     }
     return(
         <>
-            <div data-aos="flip-left" className=" mb-3 lg:w-[20%] w-[80%] min-h-[300px] lg:h-[300px] rounded-md dark:bg-Fundo-Secundario bg-Cor-Texto flex flex-col border-2 border-Fundo-dark/50 dark:opacity-75 shadow-md dark:hover:opacity-100 hover:opacity-70 transition ml-10">
+            <div data-aos="flip-left" className=" mb-3 lg:w-[20%] w-[80%] min-h-[300px] rounded-md dark:bg-Fundo-Secundario bg-Cor-Texto flex flex-col border-2 border-Fundo-dark/50 dark:opacity-75 shadow-md dark:hover:opacity-100 hover:opacity-70 transition ml-10">
                 <div>
                     <img className="rounded-t-md" src={img_url} />
                 </div>
