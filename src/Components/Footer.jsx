@@ -4,7 +4,7 @@ import { GithubLogo, LinkedinLogo, InstagramLogo, Folder, Alarm, HeartStraight }
 
 export default function Footer(){
     return(
-        <footer className="flex items-center justify-around bg-[#252525] border-t-2 border-Cor-Texto lg:p-2">
+        <footer className="flex items-center justify-around dark:bg-[#252525] bg-Cor-Secundaria border-t-2 border-Cor-Texto lg:p-2">
             <div className="flex flex-sol items-center">
                 <img className="w-[64px]" src={Wolf_white} alt="Logo" />
                 <div className="flex text-Cor-Texto items-center">

@@ -44,17 +44,6 @@ export default function Header(){
             
             { menuMobile ? <div className="bg-Fundo-dark/50 w-full h-full z-30 fixed top-0" onClick={menuBaile}>
                 <header data-aos="fade-right" className=" w-[50%] z-20 h-screen fixed border-r-2 border-black/40 top-0 bg-Cor-Secundaria ">
-                        {theme === "ligth" ? (
-                            <button className=' m-2 text-[14px] w-[100px] flex gap-2 bg-Fundo-dark/30 p-2 rounded-md text-Cor-Texto hover:bg-Fundo-dark/30 transition-all' onClick={()=> setTheme("dark")}>
-                                <FiMoon size={20} className="text-Cor-Texto" />
-                                Escuro
-                            </button>
-                        ) : (
-                            <button className=' m-2 flex gap-2 w-[100px] text-[14px] bg-Cor-Texto/10  p-2 rounded-md text-Cor-Texto  hover:bg-Cor-Texto/20 transition-all ' onClick={()=> setTheme("ligth")}>
-                                <BiSun size={20} className="text-Cor-Texto" />
-                            Claro
-                        </button>
-                        )}
                     <nav className="pt-20 gap-4 text-white/80 text-[20px] w-full h-screen flex flex-col text-center">
                         <a onClick={setMenuMobile} className="hover:text-Cor-Secundaria transition-colors" href="/">Inicio</a>
                         <a onClick={setMenuMobile} className="hover:text-Cor-Secundaria transition-colors" href="/Projects/">Projetos</a>
@@ -65,6 +54,17 @@ export default function Header(){
                             <a href="https://www.instagram.com/_stefwolf_/"><InstagramLogo size={40} /></a>
                             <a href="https://github.com/StefWolf"><GithubLogo size={40} /></a>
                         </div>
+                        {theme === "ligth" ? (
+                            <button className=' m-2 text-[14px] w-[90%] justify-center flex gap-2 bg-Fundo-dark/90 p-2 rounded-md text-Cor-Texto hover:bg-Fundo-dark/30 transition-all' onClick={()=> setTheme("dark")}>
+                                <FiMoon size={20} className="text-Cor-Texto" />
+                                Escuro
+                            </button>
+                        ) : (
+                            <button className=' m-2 flex gap-2 w-[90%] justify-center text-[14px] bg-Cor-Texto/10  p-2 rounded-md text-Cor-Texto  hover:bg-Cor-Texto/20 transition-all ' onClick={()=> setTheme("ligth")}>
+                                <BiSun size={20} className="text-Cor-Texto" />
+                            Claro
+                        </button>
+                        )}
                     </nav>
                 </header>
             </div> : <List size={64} onClick={setMenuMobile} className="fixed top-2 right-8 z-40 text-slate-200 lg:invisible" />}
