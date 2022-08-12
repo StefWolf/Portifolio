@@ -32,7 +32,7 @@ export default function Projects() {
         )
     }
   return (
-    <div className="relative">
+    <div data-aos="fade-right" className="relative">
         <Header />
         <main className='w-full '>
             <br />

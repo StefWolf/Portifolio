@@ -4,22 +4,18 @@ import { GithubLogo, LinkedinLogo, InstagramLogo, Folder, Alarm, HeartStraight }
 
 export default function Footer(){
     return(
-        <footer className="flex items-center justify-around dark:bg-[#252525] bg-Cor-Secundaria border-t-2 border-Cor-Texto lg:p-2">
+        <footer className="flex flex-col lg:flex-row items-center justify-around dark:bg-[#252525] shadow-lg bg-Cor-Secundaria lg:p-2 p-4">
             <div className="flex flex-sol items-center">
-                <img className="w-[64px]" src={Wolf_white} alt="Logo" />
-                <div className="flex text-Cor-Texto items-center">
-                    <Copyright size={32} /><strong>Todos os direitos Reservados 2022</strong>
+                <div className="flex text-[14px] text-Cor-Texto items-center">
+                <Copyright size={20} className="mr-1" />2022 - Todos os direitos Reservados 
                 </div>
             </div>
-            <div className="flex gap-2 text-Cor-Texto">
-                <a href="https://github.com/StefWolf" target='_black' className="hover:text-[#949494] transition-colors"><GithubLogo size={48} /></a>
-                <a href="https://www.linkedin.com/in/stefane-orichuela-0036871b4/" target='_black' className="hover:text-[#949494] transition-colors"><LinkedinLogo size={48} /></a>
-                <a href="https://www.instagram.com/_stefwolf_/" target='_black' className="hover:text-[#949494] transition-colors"><InstagramLogo size={48} /></a>
+            <div className="flex lg:mt-0 mt-2 gap-2 text-Cor-Texto">
+                <a href="https://github.com/StefWolf" target='_black' className="hover:text-[#949494] transition-colors"><GithubLogo size={38} /></a>
+                <a href="https://www.linkedin.com/in/stefane-orichuela-0036871b4/" target='_black' className="hover:text-[#949494] transition-colors"><LinkedinLogo size={38} /></a>
+                <a href="https://www.instagram.com/_stefwolf_/" target='_black' className="hover:text-[#949494] transition-colors"><InstagramLogo size={38} /></a>
             </div>
-            <nav className="flex flex-col items-center gap-4 text-Cor-Texto text-1xl ">
-                <a className="hover:text-Cor-Secundaria transition-colors" href="/">Inicio</a>
-                <a className="hover:text-Cor-Secundaria transition-colors" href="/Projects/">Projetos</a>
-            </nav>
+            
         </footer>
     )
 }

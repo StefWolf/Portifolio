@@ -8,7 +8,7 @@ export default function Skills(){
         <>
             <Header />
             <br /><br /><br />
-            <main className="h-[1050px] lg:h-[850px]">
+            <main data-aos="fade-right" className="h-[1050px] lg:h-[850px]">
                 <div className=" flex lg:flex-row flex-col w-full">
                     <CardInfoSkill />
                    <ContainerProgress />
