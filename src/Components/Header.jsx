@@ -56,7 +56,13 @@ export default function Header(){
             { menuMobile ? 
             
             <div className="bg-Fundo-dark/50 w-full h-full z-30 fixed top-0" onClick={menuBaile}>
-                <header data-aos="fade-right" className=" w-[50%] z-20 h-screen fixed border-r-2 border-black/40 top-0 bg-Cor-Secundaria ">
+                <header data-aos="fade-right" className=" w-[50%] z-20 h-screen fixed border-r-4 border-black/20 top-0 bg-Cor-Secundaria ">
+                        <div className="text-[30px] flex gap-2  text-Cor-Texto pt-4 bg-black/20">
+                            <div className="text-[50px]">
+                                <GiWolfHowl />
+                            </div>
+                            <strong>StefWolf</strong>
+                        </div>
                     <nav className="pt-20 gap-4 text-white/80 text-[20px] w-full h-screen flex flex-col text-center">
                         <a onClick={setMenuMobile} className="hover:text-Cor-Secundaria transition-colors" href="/">Inicio</a>
                         <a onClick={setMenuMobile} className="hover:text-Cor-Secundaria transition-colors" href="/Projects/">Projetos</a>
@@ -80,9 +86,9 @@ export default function Header(){
                         )}
                     </nav>
                 </header>
-                <X data-aos="zoom-in" size={40} onClick={setMenuMobile} className="fixed top-4 right-8 z-40 text-slate-200 lg:invisible " />
+                <X data-aos="zoom-in" size={40} onClick={setMenuMobile} className="fixed top-4 right-8 z-40 dark:text-slate-200 text-Fundo-dark lg:invisible " />
             </div> :              
-                    <List data-aos="zoom-in" size={50} onClick={setMenuMobile} className="fixed top-4 right-8 z-40 text-slate-200 lg:invisible " />  
+                    <List data-aos="zoom-in" size={50} onClick={setMenuMobile} className="fixed top-4 right-8 z-40 dark:text-slate-200 text-Fundo-dark lg:invisible " />  
                 }
     
         </>

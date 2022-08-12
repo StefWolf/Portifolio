@@ -42,9 +42,9 @@ export default function Home() {
         <div>
             <Header />
             <main className="w-full mb-8 ">
-                <div className="relative h-screen md:h-auto">
+                <div  className="relative h-screen md:h-auto">
                     <img className="w-full h-screen md:h-auto" src={Wallpaper}/>
-                    <div className="absolute top-0  w-full h-full flex items-center justify-center">
+                    <div data-aos="fade-right" className="absolute top-0  w-full h-full flex items-center justify-center">
                         <div className="lg:absolute w-[801px] h-[390px] bg-Cor-Secundaria/80  lg:rounded-[34px] flex gap-4 flex-col p-[37px]  text-Cor-Texto">
                             <div>
                                 <span className=" text-[36px]">Hello World</span>
@@ -61,7 +61,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="w-full flex  justify-around pt-[20%] flex-wrap-reverse lg:pt-0">
+                <div data-aos="fade-right"  className="w-full flex  justify-around pt-[20%] flex-wrap-reverse lg:pt-0">
                     <div className="flex gap-3 text-[10px] lg:w-auto w-full justify-center lg:text-sm text-white mt-7 lg:ml-20">
                         <div className="flex flex-col items-center">
                             <DiUnitySmall className="text-white" size={40} />
