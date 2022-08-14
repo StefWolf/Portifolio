@@ -100,7 +100,7 @@ export default function Home() {
 
                 <div className="pt-10 pl-3 w-full flex flex-col gap-7 items-center">
                     <nav className="w-full lg:w-auto flex items-center justify-center gap-8 dark:text-Cor-Texto text-Fundo-dark font-2xl">
-                        <button onClick={taglesSite} className="sm:text-sm hover:underline hover:text-[#949494]">Sites</button>
+                        <button onClick={taglesSite} className="hover:underline hover:text-[#949494]">Sites</button>
                         <button onClick={tagleJogos} className="hover:underline hover:text-[#949494]">Jogos</button>
                         <button onClick={tagleEscritas} className="hover:underline hover:text-[#949494]">Escritas</button>
                     </nav>
